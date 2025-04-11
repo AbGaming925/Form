@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <form action="" method="post" class="form-example">
+                <h1><u>College Exhibition Form</u></h1>
+
+                <!-- First Name -->
+                <div class="form-example">
+                    <label for="first_name" style="font-size: 20px;"><b>First Name:</b></label>
+                    <input type="text" name="first_name" id="first_name" placeholder="Enter Your First Name" required>
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-example">
+                    <label for="last_name" style="font-size: 20px;"><b>Last Name:</b></label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Enter Your Last Name" required>
+                </div>
+
+                <!-- Campus Details -->
+                <div class="form-example">
+                    <label for="campus_name" style="font-size: 20px;"><b>Campus:</b></label>
+                    <input type="text" name="campus_name" id="campus_name" placeholder="Enter Campus Name" required>
+                </div>
+
+                <!-- Stream Details -->
+                <div class="form-example">
+                    <label for="stream_name" style="font-size: 20px;"><b>Stream:</b></label>
+                    <input type="text" name="stream_name" id="stream_name" placeholder="e.g., B.A., B.Sc., B.Com."
+                        required>
+                </div>
+
+                <!-- Semester Details Using Radio-->
+                <div class="form-example">
+                    <label style="font-size: 20px;"><b>Semester:</b></label><br>
+                    <fieldset>
+                        <legend>Select Your Semester</legend>
+                        <label for="semester_i">
+                            <input type="radio" value="Semester I" name="semester" id="semester_i" class="sem" required>
+                            Semester-I
+                        </label>
+                        <label for="semester_ii">
+                            <input type="radio" value="Semester II" name="semester" id="semester_ii" class="sem">
+                            Semester-II
+                        </label>
+                        <label for="semester_iii">
+                            <input type="radio" value="Semester III" name="semester" id="semester_iii" class="sem">
+                            Semester-III
+                        </label>
+                        <label for="semester_iv">
+                            <input type="radio" value="Semester IV" name="semester" id="semester_iv" class="sem">
+                            Semester-IV
+                        </label>
+                        <label for="semester_v">
+                            <input type="radio" value="Semester V" name="semester" id="semester_v" class="sem">
+                            Semester-V
+                        </label>
+                        <label for="semester_vi">
+                            <input type="radio" value="Semester VI" name="semester" id="semester_vi" class="sem">
+                            Semester-VI
+                        </label>
+                    </fieldset>
+                </div>
+
+                <!-- Roll Number -->
+                <div class="form-example">
+                    <label for="roll_no" style="font-size: 20px;"><b>College Roll No:</b></label>
+                    <input type="number" name="roll_no" id="roll_no" placeholder="Enter College Roll Number" required>
+                </div>
+
+                <!-- Registration Number -->
+                <div class="form-example">
+                    <label for="regn_no" style="font-size: 20px;"><b>Registration No:</b></label>
+                    <input type="number" name="regn_no" id="regn_no" placeholder="Enter Regn. Number" required>
+                </div>
+
+                <!-- Upload Registration Picture -->
+                <div class="form-example">
+                    <label for="regn_pic" style="font-size: 20px;"><b>Upload Regn. Picture:</b></label>
+                    <input type="file" name="regn_pic" id="regn_pic" accept="image/png, image/jpeg" required>
+                </div>
+
+                <!-- Admission Date -->
+                <div class="form-example">
+                    <label for="admission_date" style="font-size: 20px;"><b>Date of Admission:</b></label>
+                    <input type="date" name="admission_date" id="admission_date" required>
+                </div>
+
+                <!-- Email ID -->
+                <div class="form-example">
+                    <label for="email_id" style="font-size: 20px;"><b>Email Id:</b></label>
+                    <input type="email" name="email_id" id="email_id" placeholder="Enter Your Email Id" required>
+                </div>
+
+                <!-- Mobile Number -->
+                <div class="form-example">
+                    <label for="mobile_no" style="font-size: 20px;"><b>Mobile No:</b></label>
+                    <input type="tel" name="mobile_no" id="mobile_no" pattern="[0-9]{10}" title="Enter a 10-digit mobile number" placeholder="Enter Your Mobile No" required>
+                </div>
+
+                <!-- For PG Students Only -->
+                <div class="form-example">
+                    <label for="passing_year" style="font-size: 20px;"><b>Passed Out Year:</b></label>
+                    <input type="number" name="passing_year" id="passing_year" placeholder="For PG Students Only">
+                </div>
+
+                <!-- Food Canteen Card? -->
+                <div class="form-example">
+                    <label for="foodcanteen">
+                    <input type="checkbox" name="Canteen_Card" id="foodcanteen" class="food"> Want Food Canteen Card?</label>
+                </div>
+
+                <br><br>
+                <div class="form-example">
+                    <!-- Submit Button -->
+                    <input type="submit" value="Submit Form">
+                    <!-- Reset Button -->
+                    <input type="reset" value="Reset Form">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

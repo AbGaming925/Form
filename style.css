@@ -1,0 +1,108 @@
+/* Apply to the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the form */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+/* Form container */
+form {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Form title */
+form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Each input section */
+.form-example {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Radio buttons and checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    vertical-align: middle;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="reset"] {
+    background-color: #dc3545;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"]:hover {
+    background-color: #c82333;
+}
